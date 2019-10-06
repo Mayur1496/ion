@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BluetoothSerial } from '@ionic-native/bluetooth-serial/ngx';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(private bluetoothSerial: BluetoothSerial) {}
+  bluetoothOn() {
+    if (!this.bluetoothSerial.isEnabled()) {
+      this.bluetoothSerial.enable();
+    }
+  }
 
+  bluetoothOff() {
+    if (this.bluetoothSerial.isEnabled()) {
+      this.bluetoothSerial.disconnect();
+    }
+  }
 }

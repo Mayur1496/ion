@@ -1,9 +1,26 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Bluetooth
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" style="text-align: center; margin-top: 80px;">
+          <ion-button (click)="bluetoothOn()"><ion-icon name="bluetooth" ></ion-icon>
+            Turn On
+          </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" style="text-align: center; margin-top: 80px;">
+          <ion-button (click)="bluetoothOff()"><ion-icon name="bluetooth" ></ion-icon>
+            Turn Off
+          </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
