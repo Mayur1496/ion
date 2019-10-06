@@ -10,9 +10,7 @@ export class Tab3Page {
 
   constructor(private bluetoothSerial: BluetoothSerial) {}
   bluetoothOn() {
-    if (!this.bluetoothSerial.isEnabled()) {
       this.bluetoothSerial.enable();
-    }
   }
 
   bluetoothOff() {
