@@ -15,6 +15,7 @@ import { Media } from '@ionic-native/media/ngx';
 import { File } from '@ionic-native/file/ngx';
 import { IonicStorageModule } from '@ionic/storage';
 import { BluetoothSerial } from '@ionic-native/bluetooth-serial/ngx';
+import { BluetoothLE } from '@ionic-native/bluetooth-le/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { BluetoothSerial } from '@ionic-native/bluetooth-serial/ngx';
     Media,
     File,
     BluetoothSerial,
+    BluetoothLE,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
